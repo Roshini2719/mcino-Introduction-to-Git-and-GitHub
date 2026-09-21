@@ -1,40 +1,26 @@
-Last login: Mon Sep 21 12:20:43 on ttys000
-muthamilroshini@admin-34 ~ % cd ~/Desktop
-muthamilroshini@admin-34 Desktop % git clone https://github.com/Roshini2719/mcino-Introduction-to-Git-and-GitHub.git
-Cloning into 'mcino-Introduction-to-Git-and-GitHub'...
-remote: Enumerating objects: 35, done.
-remote: Total 35 (delta 0), reused 0 (delta 0), pack-reused 35 (from 1)
-Receiving objects: 100% (35/35), 17.46 KiB | 3.49 MiB/s, done.
-Resolving deltas: 100% (6/6), done.
-muthamilroshini@admin-34 Desktop % cd mcino-Introduction-to-Git-and-GitHub
-muthamilroshini@admin-34 mcino-Introduction-to-Git-and-GitHub % git branch
-* main
-muthamilroshini@admin-34 mcino-Introduction-to-Git-and-GitHub % git branch -a
-* main
-  remotes/origin/HEAD -> origin/main
-  remotes/origin/main
-muthamilroshini@admin-34 mcino-Introduction-to-Git-and-GitHub % git checkout -b bug-fix-typo
-Switched to a new branch 'bug-fix-typo'
-muthamilroshini@admin-34 mcino-Introduction-to-Git-and-GitHub % git status
-On branch bug-fix-typo
-nothing to commit, working tree clean
-muthamilroshini@admin-34 mcino-Introduction-to-Git-and-GitHub % git add .
+muthamilroshini@admin-34 mcino-Introduction-to-Git-and-GitHub % ls
+CODE_OF_CONDUCT.md	compound_interest.py	CONTRIBUTING.md		LICENSE			README.md		simple-interest.sh
+muthamilroshini@admin-34 mcino-Introduction-to-Git-and-GitHub % nano README.md
+muthamilroshini@admin-34 mcino-Introduction-to-Git-and-GitHub % git add README.md
 muthamilroshini@admin-34 mcino-Introduction-to-Git-and-GitHub % git commit -m "Fix typo"
-On branch bug-fix-typo
-nothing to commit, working tree clean
-muthamilroshini@admin-34 mcino-Introduction-to-Git-and-GitHub % git push -u origin bug-fix-typo
-Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: 
-remote: Create a pull request for 'bug-fix-typo' on GitHub by visiting:
-remote:      https://github.com/Roshini2719/mcino-Introduction-to-Git-and-GitHub/pull/new/bug-fix-typo
-remote: 
+[bug-fix-typo e3e6585] Fix typo
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+muthamilroshini@admin-34 mcino-Introduction-to-Git-and-GitHub % git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 292 bytes | 292.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/Roshini2719/mcino-Introduction-to-Git-and-GitHub.git
- * [new branch]      bug-fix-typo -> bug-fix-typo
-branch 'bug-fix-typo' set up to track 'origin/bug-fix-typo'.
+   ad95b0a..e3e6585  bug-fix-typo -> bug-fix-typo
 muthamilroshini@admin-34 mcino-Introduction-to-Git-and-GitHub % git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 muthamilroshini@admin-34 mcino-Introduction-to-Git-and-GitHub % git merge bug-fix-typo
-Already up to date.
+Updating ad95b0a..e3e6585
+Fast-forward
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 muthamilroshini@admin-34 mcino-Introduction-to-Git-and-GitHub % 
-
